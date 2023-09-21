@@ -27,7 +27,6 @@ pipeline{
             steps{ 
                 echo "Deploying the code"
                 sh 'docker-compose down && docker-compose up -d'
-                sh 'docker image prune -a'
             }
         }
     }
