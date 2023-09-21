@@ -10,7 +10,7 @@ pipeline{
         stage("Build"){
             steps{ 
                 echo "Building the code"
-                sh 'docker build -t djangonotesappimg:v1 .'
+                sh 'sudo docker build -t djangonotesappimg:v1 .'
             }
         }
          stage("Push to docker hub"){
